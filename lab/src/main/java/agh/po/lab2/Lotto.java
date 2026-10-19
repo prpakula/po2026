@@ -29,6 +29,9 @@ public class Lotto {
 
        System.out.println("Wypisz typy po spacji: " + lista2);
 
+        lista2.retainAll(lista1);
+        System.out.println("Trafiłeś: " + lista2);
+        System.out.println("A liczba trafów to: " + lista2.size());
 
 
         }
