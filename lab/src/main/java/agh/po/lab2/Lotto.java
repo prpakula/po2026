@@ -1,6 +1,5 @@
 package agh.po.lab2;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -12,7 +11,7 @@ public class Lotto {
         int liczba;
 
         for(int i=1;i<7;i++){
-            liczba = rand.nextInt(50)+1;
+            liczba = rand.nextInt(49)+1;
             if(lista1.contains(liczba)){
                 i--;
                 continue;
@@ -21,16 +20,19 @@ public class Lotto {
             }
         }
 
-        System.out.println(lista1);
-        System.out.println('Wypisz 6 liczb od 1 do 49 po spacji');
+        System.out.println("Wylosowane liczby: " + lista1);
 
        ArrayList<Integer> lista2 = new ArrayList<>();
+       for(String arg : args) {
+            lista2.add(Integer.parseInt(arg));
+       }
 
-       while(int i<7){
-           lista2.add()
+       System.out.println("Wypisz typy po spacji: " + lista2);
+
+
 
         }
 
-    }
+
 }
 
