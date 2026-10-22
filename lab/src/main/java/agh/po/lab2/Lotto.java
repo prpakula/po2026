@@ -33,6 +33,32 @@ public class Lotto {
         System.out.println("Trafiłeś: " + lista2);
         System.out.println("A liczba trafów to: " + lista2.size());
 
+        System.out.println("Start losowania");
+        boolean trafienie = false;
+        long liczbaLosowan = 0;
+        long czasStart = System.currentTimeMillis();
+        int nowaLiczba;
+
+        while(!trafienie){
+            liczbaLosowan++;
+            ArrayList<Integer>nowaLista = new ArrayList<>();
+            for(int i=1;i<7;i++){
+                nowaLiczba = rand.nextInt(49)+1;
+                if(nowaLista.contains(nowaLiczba)){
+                    i--;
+                } else{
+                    nowaLista.add(nowaLiczba);
+                }
+            }
+            if(nowaLista.containsAll(lista1)){
+                trafienie = true;
+            }
+
+        }
+        long czasStop = System.currentTimeMillis();
+        long czasLacznie = czasStop - czasStart;
+        System.out.println("Czas Losowania: " + czasLacznie);
+        System.out.println("A liczba losowań: " + liczbaLosowan);
 
         }
 
