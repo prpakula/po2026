@@ -27,8 +27,27 @@ public class CodingBat {
     }
 
     public int sum13(int[] nums) {
-        if(sum13)
+        int sum = 0;
+        int i = 0;
+        if(nums!=null){
+            while(i<nums.length){
+                if(nums[i]==13) {
+                    i = i+2;
+
+                } else{
+                    sum = sum + nums[i];
+                    i++;
+                }
+
+
+
+            }
+            return sum;
+        } else{
+            return 0;
+        }
     }
+
 
 
 
@@ -36,6 +55,7 @@ public class CodingBat {
     public static void main(String[] args){
         CodingBat cb = new CodingBat();
         cb.monkeyTrouble(true,false);
+        int[] a = {1,2,3,4,5,13,2,5,13,1,13,1,2};
 
 
 
