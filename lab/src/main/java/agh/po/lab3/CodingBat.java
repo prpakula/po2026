@@ -39,8 +39,6 @@ public class CodingBat {
                     i++;
                 }
 
-
-
             }
             return sum;
         } else{
@@ -51,11 +49,32 @@ public class CodingBat {
 
 
 
+    public String minCat(String a, String b) {
+        if(a.length() > b.length()){
+            int ileUciac = a.length() - b.length();
+            return a.substring(ileUciac) + b;
+        } else if(b.length() > a.length()){
+            int ileUciac = b.length() - a.length();
+            return a + b.substring(ileUciac);
+        } else{
+            return a + b;
+        }
+    }
+
+
 
     public static void main(String[] args){
         CodingBat cb = new CodingBat();
-        cb.monkeyTrouble(true,false);
+
+        System.out.println("monkeyTrouble: " +cb.monkeyTrouble(true,false));
+
+        System.out.println("intMax: " +cb.intMax(1,2,3));
+
         int[] a = {1,2,3,4,5,13,2,5,13,1,13,1,2};
+        System.out.println("sum13: " +cb.sum13(a));
+
+        System.out.println("minCat: " +cb.minCat("Hello", "Java"));
+
 
 
 
