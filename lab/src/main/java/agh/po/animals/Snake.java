@@ -11,4 +11,9 @@ public class Snake extends Animal{
     String getDescription(){
         return "";
     }
+
+    @Override
+    void makeSound(){
+        System.out.println("Ssss");
+    }
 }

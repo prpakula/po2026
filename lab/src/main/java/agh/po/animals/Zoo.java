@@ -18,11 +18,19 @@ public class Zoo {
             } else if(los==1){
                 animals[i] = new Parrot("Papuga"+i);
             }else if(los==2){
-                animals[i] = new Snake("Wąż"+i)
+                animals[i] = new Snake("Wąż"+i);
             }
 
 
         }
+        int ileNog = 0;
+        for(Animal animal : animals){
+            ileNog += animal.getLegs();
+
+            System.out.println(animal.getDescription());
+            animal.makeSound();
+        }
+        System.out.println("Suma nóg zwierząt wynosi: "+ileNog);
 
 
     }
