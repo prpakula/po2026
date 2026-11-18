@@ -9,7 +9,7 @@ public class Parrot extends Animal {
 
     @Override
     String getDescription(){
-        return "";
+        return "Papuga " + name + ", nogi: " + legs;
 
     }
     @Override

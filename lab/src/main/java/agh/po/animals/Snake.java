@@ -9,7 +9,8 @@ public class Snake extends Animal{
 
     @Override
     String getDescription(){
-        return "";
+
+        return "Wąż " + name + ", nogi: " + legs;
     }
 
     @Override

@@ -8,7 +8,7 @@ public class Dog extends Animal {
 
     @Override
     String getDescription(){
-        return "";
+        return "Pies " + name + ", nogi: " + legs;
     }
 
     @Override
