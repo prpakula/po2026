@@ -7,6 +7,7 @@ public abstract class Animal {
     abstract String getDescription();
 
     public int getLegs(){
+
         return legs;
     }
     abstract void makeSound();
