@@ -19,6 +19,7 @@ public class Komponent {
         return waga;
     }
 
+
     public double getCena(){
         return cena;
     }
